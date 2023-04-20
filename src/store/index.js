@@ -1,7 +1,7 @@
 import { configureStore } from '@reduxjs/toolkit'
 import createSagaMiddleware from 'redux-saga'
 import { all } from 'redux-saga/effects'
-import { productsReducer } from './reducers'
+import { mockupReducer, productReducer } from './slices'
 // import { productsSaga } from "./sagas";
 
 // Create a root saga that combines all your sagas
@@ -17,7 +17,8 @@ const sagaMiddleware = createSagaMiddleware()
 // Create the Redux store with the reducer and middleware
 const store = configureStore({
     reducer: {
-        productsReducer: productsReducer
+        product: productReducer,
+        mockup: mockupReducer
     },
     // Add the saga middleware to the default middleware list
     middleware: (getDefaultMiddleware) =>

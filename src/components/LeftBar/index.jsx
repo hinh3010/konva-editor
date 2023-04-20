@@ -1,10 +1,11 @@
+import { Paper } from '@mui/material';
 import React from 'react';
 
 const LeftBar = () => {
     return (
-        <div className='w-20 h-full bg-black'>
+        <Paper elevation={3} className='w-20 h-full bg-black'>
 
-        </div>
+        </Paper>
     );
 }
 

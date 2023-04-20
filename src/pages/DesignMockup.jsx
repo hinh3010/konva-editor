@@ -6,9 +6,9 @@ import Main from '../components/Main';
 
 const DesignMockup = () => {
     return (
-        <div>
+        <div className='w-full h-full'>
             <Header />
-            <div className='flex items-center h-96'>
+            <div className='flex items-center' style={{ height: '89%' }}>
                 <LeftBar />
                 <Main />
                 <RightBar />

@@ -1,12 +1,16 @@
+import { Paper } from '@mui/material';
 import React from 'react';
+import MockupBottom from '../MockupBottom';
+import MockupDesign from '../MockupDesign';
+import MockupTop from '../MockupTop';
 
 const Main = () => {
     return (
-        <div className='h-full bg-slate-400 flex-1'>
-            <div className='flex items-center'>
-
-            </div>
-        </div>
+        <Paper elevation={3} className='h-full flex-1 flex flex-col items-center'>
+            <MockupTop />
+            <MockupDesign />
+            <MockupBottom />
+        </Paper>
     );
 }
 
